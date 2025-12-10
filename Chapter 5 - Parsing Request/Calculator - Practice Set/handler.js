@@ -44,7 +44,7 @@ const requestHandler = (req, res) => {
       `
     );
   }
-  else if(req.url === '/calculate-result' && req.method === 'POST'){
+  else if(req.url.toLowerCase() === '/calculate-result' && req.method === 'POST'){
     return sumRequestHandler (req , res);
   }
 };

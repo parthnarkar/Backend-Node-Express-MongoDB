@@ -1,5 +1,4 @@
 const http = require("http");
-const { URLSearchParams } = require("url");
 const { requestHandler } = require('./handler');
 
 const server = http.createServer(requestHandler);
