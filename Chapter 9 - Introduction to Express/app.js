@@ -11,11 +11,16 @@ app.use("/", (req, res, next) => {
     next(); //if this is not put then it will not move to second middleware and will be stuck until first middleware gives any response
 });
 
-app.use("/submit-details", (req, res, next) => {
+app.post("/submit-details", (req, res, next) => {
     console.log("Came in Second Middleware", req.url, req.method);
 
     //now no need to write the content type in express , because express is intelligent
     res.send('<p>Parth Builds</p>');
+});
+
+app.use("/", (req, res, next) => {
+    console.log("Came in Another Middleware", req.url, req.method);
+    res.send("<p>Came from another middleware</p>");
 });
 
 const PORT = 3000;
