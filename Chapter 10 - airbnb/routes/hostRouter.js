@@ -6,12 +6,12 @@ const express = require('express');
 const hostRouter = express.Router();
 
 hostRouter.get("/add-home", (req, res, next) => {
-  res.send(res.sendFile(path.join(__dirname, '../', 'views', 'addHome.html')));
+  res.sendFile(path.join(__dirname, '../', 'views', 'addHome.html'));
 });
 
 hostRouter.post("/add-home", (req, res, next) => {
   console.log(req.body);
-  res.send(res.sendFile(path.join(__dirname, '../', 'views', 'homeAdded.html')));
+  res.sendFile(path.join(__dirname, '../', 'views', 'homeAdded.html'));
 });
 
 module.exports = hostRouter;
