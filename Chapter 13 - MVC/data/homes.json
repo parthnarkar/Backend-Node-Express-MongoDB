@@ -1,0 +1,16 @@
+[
+  {
+    "houseName": "Second Home",
+    "housePrice": "2334",
+    "houseLoc": "Mumbai",
+    "houseRating": "2",
+    "houseImage": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyaminmellish-106399.jpg&fm=jpg"
+  },
+  {
+    "houseName": "Second Home",
+    "housePrice": "34343",
+    "houseLoc": "Mumbai",
+    "houseRating": "2",
+    "houseImage": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyaminmellish-106399.jpg&fm=jpg"
+  }
+]
