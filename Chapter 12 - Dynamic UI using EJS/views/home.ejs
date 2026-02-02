@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/header') %>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>airbnb Home</title>
-  <!-- <link rel="stylesheet" href="home.css"> -->
-  <link href="/output.css" rel="stylesheet">
-</head>
+  <body>
+    <%- include('partials/nav') %>
+      <main class="container mx-auto bg-white shadow-lg rounded-lg p-8 mt-10 max-w-xl">
+        <h2 class="text-3xl text-red-500 font-bold text-center mb-6">
+          Here are our registered homes:
+        </h2>
+        <ul class="space-y-4">
+          <% registeredHomes.forEach(home=> { %>
+            <li class="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <span class="text-lg text-gray-800">
+                <%= home.houseName %>
+              </span>
+            </li>
+            <% }) %>
+        </ul>
+      </main>
+  </body>
 
-<body>
-  <header>
-    <h1 class="text-4xl font-bold text-red-600"> Here are our registered Homes:
-    </h1>
-    <ul>
-      <% registeredHomes.forEach(home=> { %>
-        <li>
-          <%= home.houseName %>
-        </li>
-
-        <% }); %>
-    </ul>
-  </header>
-  <main>
-    <a href="/host/add-home">Add Home</a>
-  </main>
-</body>
-
-</html>
+  </html>
